@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 # Load Indian dataset
-df = pd.read_csv("C:/Users/udays/OneDrive/Desktop/Bubble-data-visualization/data.csv")
+df = pd.read_csv("data.csv")
 
 # Create bubble plot map
 fig = px.scatter_geo(
@@ -29,3 +29,4 @@ fig.update_layout(
 )
 fig.write_html("index.html", include_plotlyjs="cdn")
 fig.show()
+
